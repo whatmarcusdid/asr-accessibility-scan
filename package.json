@@ -1,0 +1,37 @@
+{
+  "name": "asr-accessibility-scan",
+  "version": "1.0.0",
+  "description": "Attorney Site Rescue accessibility scanner - WCAG 2.2 Level AA automated testing",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "asr-scan": "./cli.js"
+  },
+  "scripts": {
+    "scan": "node cli.js",
+    "demo": "node cli.js examples/sample-urls.txt --label demo --output examples/demo-output"
+  },
+  "keywords": [
+    "accessibility",
+    "wcag",
+    "a11y",
+    "axe",
+    "lighthouse",
+    "pa11y",
+    "law-firm"
+  ],
+  "author": "Attorney Site Rescue",
+  "license": "MIT",
+  "dependencies": {
+    "axe-core": "4.8.2",
+    "commander": "11.1.0",
+    "lighthouse": "11.3.0",
+    "pa11y": "8.0.0",
+    "playwright": "1.40.1",
+    "puppeteer": "21.6.1",
+    "xml2js": "0.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
