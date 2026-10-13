@@ -1,0 +1,7 @@
+# Sample URLs for ASR Accessibility Scanner Demo
+
+# Simple test page (should pass - no violations)
+https://example.com
+
+# Local test page with accessibility issues
+http://localhost:8899/test-page.html

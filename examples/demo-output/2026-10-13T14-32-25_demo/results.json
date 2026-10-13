@@ -1,0 +1,3942 @@
+[
+  {
+    "url": "https://example.com",
+    "viewport": "desktop",
+    "timestamp": "2026-10-13T14:32:25.214Z",
+    "axe": {
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+          "help": "ARIA hidden element must not be focusable or contain focusable elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "focusable-modal-open",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements while a modal is open"
+                },
+                {
+                  "id": "focusable-disabled",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                },
+                {
+                  "id": "focusable-not-tabbable",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<svg viewBox=\"0,0,20,20\" width=\"44\" height=\"44\" fill=\"currentColor\" aria-hidden=\"true\">",
+              "target": [
+                "svg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#0000ee",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 9.39,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 9.39"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2a",
+            "wcag141",
+            "TTv5",
+            "TT13.a",
+            "EN-301-549",
+            "EN-9.1.4.1"
+          ],
+          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "link-in-text-block-style",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Links can be distinguished from surrounding text by visual styling"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is not in tab order or has accessible text"
+                }
+              ],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "impact": null,
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag2aa",
+            "wcag144",
+            "EN-301-549",
+            "EN-9.1.4.4",
+            "ACT"
+          ],
+          "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "help": "Zooming and scaling must not be disabled",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/meta-viewport?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "meta-viewport",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "<meta> tag does not disable zooming on mobile devices"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+              "target": [
+                "meta[name=\"viewport\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "valid-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2aa",
+            "wcag312",
+            "TTv5",
+            "TT11.b",
+            "EN-301-549",
+            "EN-9.3.1.2",
+            "ACT"
+          ],
+          "description": "Ensures lang attributes have valid values",
+          "help": "lang attribute must have a valid value",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/valid-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ar\" dir=\"rtl\">هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.</p>",
+              "target": [
+                "p[lang=\"ar\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "impact": "serious",
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "internal-link-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No valid skip link found"
+                },
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a heading"
+                },
+                {
+                  "id": "landmark",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a landmark region"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2026-10-13T14:32:25.925Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": []
+    }
+  },
+  {
+    "url": "https://example.com",
+    "viewport": "mobile",
+    "timestamp": "2026-10-13T14:32:25.215Z",
+    "axe": {
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+          "help": "ARIA hidden element must not be focusable or contain focusable elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "focusable-modal-open",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements while a modal is open"
+                },
+                {
+                  "id": "focusable-disabled",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                },
+                {
+                  "id": "focusable-not-tabbable",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<svg viewBox=\"0,0,20,20\" width=\"44\" height=\"44\" fill=\"currentColor\" aria-hidden=\"true\">",
+              "target": [
+                "svg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#0000ee",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 9.39,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 9.39"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2a",
+            "wcag141",
+            "TTv5",
+            "TT13.a",
+            "EN-301-549",
+            "EN-9.1.4.1"
+          ],
+          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "link-in-text-block-style",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Links can be distinguished from surrounding text by visual styling"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is not in tab order or has accessible text"
+                }
+              ],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "impact": null,
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag2aa",
+            "wcag144",
+            "EN-301-549",
+            "EN-9.1.4.4",
+            "ACT"
+          ],
+          "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "help": "Zooming and scaling must not be disabled",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/meta-viewport?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "meta-viewport",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "<meta> tag does not disable zooming on mobile devices"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+              "target": [
+                "meta[name=\"viewport\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "valid-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2aa",
+            "wcag312",
+            "TTv5",
+            "TT11.b",
+            "EN-301-549",
+            "EN-9.3.1.2",
+            "ACT"
+          ],
+          "description": "Ensures lang attributes have valid values",
+          "help": "lang attribute must have a valid value",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/valid-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ar\" dir=\"rtl\">هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.</p>",
+              "target": [
+                "p[lang=\"ar\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "impact": "serious",
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "internal-link-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No valid skip link found"
+                },
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a heading"
+                },
+                {
+                  "id": "landmark",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a landmark region"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2026-10-13T14:32:25.924Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": []
+    }
+  },
+  {
+    "url": "http://localhost:8899/test-page.html",
+    "viewport": "desktop",
+    "timestamp": "2026-10-13T14:32:27.562Z",
+    "axe": {
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#cccccc",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 1.6,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+                      "target": [
+                        "p"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element has insufficient color contrast of 1.6 (foreground color: #cccccc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+              "target": [
+                "p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #cccccc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "TT7.b",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT"
+          ],
+          "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+          "help": "Images must have alternate text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-alt",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an alt attribute"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<img src=\"https://via.placeholder.com/150\">",
+              "target": [
+                "img"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.n",
+            "TTv5",
+            "TT5.c",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures every form element has a label",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have text that is visible to screen readers"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has no title attribute"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is in tab order and does not have accessible text"
+                }
+              ],
+              "impact": "serious",
+              "html": "<a href=\"#\"></a>",
+              "target": [
+                "a"
+              ],
+              "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        }
+      ],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "impact": null,
+          "tags": [
+            "cat.structure",
+            "wcag21aa",
+            "wcag1412",
+            "EN-301-549",
+            "EN-9.1.4.12",
+            "ACT"
+          ],
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "help": "Inline text spacing must be adjustable with custom stylesheets",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/avoid-inline-spacing?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "important-letter-spacing",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+                },
+                {
+                  "id": "important-word-spacing",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+                },
+                {
+                  "id": "important-line-height",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+              "target": [
+                "p"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures buttons have discernible text",
+          "help": "Buttons must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/button-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has inner text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bypass",
+          "impact": null,
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<h1>Test Page</h1>",
+                      "target": [
+                        "h1"
+                      ]
+                    },
+                    {
+                      "html": "<h3>Form without labels</h3>",
+                      "target": [
+                        "h3"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Page has a heading"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "24.0pt (32px)",
+                    "fontWeight": "bold",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>Test Page</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "14.0pt (18.72px)",
+                    "fontWeight": "bold",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h3>Form without labels</h3>",
+              "target": [
+                "h3"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#efefef",
+                    "contrastRatio": 18.26,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 18.26"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<td>Cell 1</td>",
+              "target": [
+                "td:nth-child(1)"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<td>Cell 2</td>",
+              "target": [
+                "td:nth-child(2)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "impact": null,
+          "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag332",
+            "TTv5",
+            "TT5.c",
+            "EN-301-549",
+            "EN-9.3.3.2"
+          ],
+          "description": "Ensures form field does not have multiple label elements",
+          "help": "Form field must not have multiple label elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/form-field-multiple-labels?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "impact": null,
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "help": "Interactive controls must not be nested",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "no-focusable-content",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have focusable descendants"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<img src=\"https://via.placeholder.com/150\">",
+              "target": [
+                "img"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "no-focusable-content",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have focusable descendants"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "impact": null,
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
+          ],
+          "description": "Ensure touch target have sufficient size and space",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/target-size?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "td-headers-attr",
+          "impact": null,
+          "tags": [
+            "cat.tables",
+            "wcag2a",
+            "wcag131",
+            "section508",
+            "section508.22.g",
+            "TTv5",
+            "TT14.b",
+            "EN-301-549",
+            "EN-9.1.3.1"
+          ],
+          "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+          "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/td-headers-attr?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "td-headers-attr",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The headers attribute is exclusively used to refer to other cells in the table"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<table>\n    <tbody><tr>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </tr>\n  </tbody></table>",
+              "target": [
+                "table"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "timestamp": "2026-10-13T14:32:28.221Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": [
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+          "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "selector": "html > body > img",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+          "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.61:1. Recommendation:  change text colour to #767676.",
+          "selector": "html > body > p",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > input",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+          "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "selector": "html > body > input",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+          "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "selector": "html > body > a",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > form > input:nth-child(1)",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+          "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "selector": "html > body > form > input:nth-child(1)",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "message": "This emailinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > form > input:nth-child(2)",
+          "runner": "htmlcs"
+        }
+      ]
+    }
+  },
+  {
+    "url": "http://localhost:8899/test-page.html",
+    "viewport": "mobile",
+    "timestamp": "2026-10-13T14:32:27.562Z",
+    "axe": {
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#cccccc",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 1.6,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "messageKey": null,
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+                      "target": [
+                        "p"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Element has insufficient color contrast of 1.6 (foreground color: #cccccc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+              "target": [
+                "p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #cccccc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "image-alt",
+          "impact": "critical",
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag111",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT7.a",
+            "TT7.b",
+            "EN-301-549",
+            "EN-9.1.1.1",
+            "ACT"
+          ],
+          "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+          "help": "Images must have alternate text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-alt",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element does not have an alt attribute"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<img src=\"https://via.placeholder.com/150\">",
+              "target": [
+                "img"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "label",
+          "impact": "critical",
+          "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.n",
+            "TTv5",
+            "TT5.c",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures every form element has a label",
+          "help": "Form elements must have labels",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            },
+            {
+              "any": [
+                {
+                  "id": "implicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an implicit (wrapped) <label>"
+                },
+                {
+                  "id": "explicit-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Form element does not have an explicit <label>"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no title attribute"
+                },
+                {
+                  "id": "non-empty-placeholder",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has no placeholder attribute"
+                },
+                {
+                  "id": "presentational-role",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "critical",
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have text that is visible to screen readers"
+                },
+                {
+                  "id": "aria-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-label attribute does not exist or is empty"
+                },
+                {
+                  "id": "aria-labelledby",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+                },
+                {
+                  "id": "non-empty-title",
+                  "data": {
+                    "messageKey": "noAttr"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has no title attribute"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is in tab order and does not have accessible text"
+                }
+              ],
+              "impact": "serious",
+              "html": "<a href=\"#\"></a>",
+              "target": [
+                "a"
+              ],
+              "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute"
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
+          ],
+          "description": "Ensure touch target have sufficient size and space",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/target-size?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 205,
+                    "height": 21
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (205px by 21px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 18,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input type=\"email\" name=\"email\">",
+                      "target": [
+                        "input[type=\"email\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (205px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+            },
+            {
+              "any": [
+                {
+                  "id": "target-size",
+                  "data": {
+                    "minSize": 24,
+                    "width": 205,
+                    "height": 21
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has insufficient size (205px by 21px, should be at least 24px by 24px)"
+                },
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 18,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [
+                    {
+                      "html": "<input type=\"text\" name=\"name\">",
+                      "target": [
+                        "input[name=\"name\"]"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Target has insufficient size (205px by 21px, should be at least 24px by 24px)\n  Target has insufficient space to its closest neighbors. Safe clickable space has a diameter of 18px instead of at least 24px."
+            }
+          ]
+        }
+      ],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "avoid-inline-spacing",
+          "impact": null,
+          "tags": [
+            "cat.structure",
+            "wcag21aa",
+            "wcag1412",
+            "EN-301-549",
+            "EN-9.1.4.12",
+            "ACT"
+          ],
+          "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
+          "help": "Inline text spacing must be adjustable with custom stylesheets",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/avoid-inline-spacing?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "important-letter-spacing",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Letter-spacing in the style attribute is not set to !important, or meets the minimum"
+                },
+                {
+                  "id": "important-word-spacing",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "word-spacing in the style attribute is not set to !important, or meets the minimum"
+                },
+                {
+                  "id": "important-line-height",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "line-height in the style attribute is not set to !important, or meets the minimum"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<p style=\"color: #ccc; background: #fff;\">This text has poor contrast</p>",
+              "target": [
+                "p"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "button-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures buttons have discernible text",
+          "help": "Buttons must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/button-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "button-has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "Element has inner text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bypass",
+          "impact": null,
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<h1>Test Page</h1>",
+                      "target": [
+                        "h1"
+                      ]
+                    },
+                    {
+                      "html": "<h3>Form without labels</h3>",
+                      "target": [
+                        "h3"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Page has a heading"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "24.0pt (32px)",
+                    "fontWeight": "bold",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h1>Test Page</h1>",
+              "target": [
+                "h1"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "14.0pt (18.72px)",
+                    "fontWeight": "bold",
+                    "expectedContrastRatio": "3:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<h3>Form without labels</h3>",
+              "target": [
+                "h3"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#efefef",
+                    "contrastRatio": 18.26,
+                    "fontSize": "10.0pt (13.3333px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 18.26"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<td>Cell 1</td>",
+              "target": [
+                "td:nth-child(1)"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<td>Cell 2</td>",
+              "target": [
+                "td:nth-child(2)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-field-multiple-labels",
+          "impact": null,
+          "tags": [
+            "cat.forms",
+            "wcag2a",
+            "wcag332",
+            "TTv5",
+            "TT5.c",
+            "EN-301-549",
+            "EN-9.3.3.2"
+          ],
+          "description": "Ensures form field does not have multiple label elements",
+          "help": "Form field must not have multiple label elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/form-field-multiple-labels?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"name\">",
+              "target": [
+                "input[name=\"name\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "multiple-label",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "moderate",
+                  "message": "Form field does not have multiple label elements"
+                }
+              ],
+              "impact": null,
+              "html": "<input type=\"email\" name=\"email\">",
+              "target": [
+                "input[type=\"email\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nested-interactive",
+          "impact": null,
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+          "help": "Interactive controls must not be nested",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/nested-interactive?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "no-focusable-content",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have focusable descendants"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<img src=\"https://via.placeholder.com/150\">",
+              "target": [
+                "img"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "no-focusable-content",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element does not have focusable descendants"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "target-size",
+          "impact": "serious",
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag22aa",
+            "wcag258"
+          ],
+          "description": "Ensure touch target have sufficient size and space",
+          "help": "All touch targets must be 24px large, or leave sufficient space",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/target-size?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<input type=\"text\" name=\"email\">",
+              "target": [
+                "input[type=\"text\"][name=\"email\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "target-offset",
+                  "data": {
+                    "closestOffset": 24,
+                    "minOffset": 24
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Target has sufficient space from its closest neighbors. Safe clickable space has a diameter of 24px which is at least 24px."
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<button>Submit</button>",
+              "target": [
+                "button"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "td-headers-attr",
+          "impact": null,
+          "tags": [
+            "cat.tables",
+            "wcag2a",
+            "wcag131",
+            "section508",
+            "section508.22.g",
+            "TTv5",
+            "TT14.b",
+            "EN-301-549",
+            "EN-9.1.3.1"
+          ],
+          "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+          "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/td-headers-attr?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "td-headers-attr",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The headers attribute is exclusively used to refer to other cells in the table"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<table>\n    <tbody><tr>\n      <td>Cell 1</td>\n      <td>Cell 2</td>\n    </tr>\n  </tbody></table>",
+              "target": [
+                "table"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [],
+      "timestamp": "2026-10-13T14:32:28.285Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": [
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+          "message": "Img element missing an alt attribute. Use the alt attribute to specify a short text alternative.",
+          "selector": "html > body > img",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+          "message": "This element has insufficient contrast at this conformance level. Expected a contrast ratio of at least 4.5:1, but text in this element has a contrast ratio of 1.61:1. Recommendation:  change text colour to #767676.",
+          "selector": "html > body > p",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > input",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+          "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "selector": "html > body > input",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent",
+          "message": "Anchor element found with a valid href attribute, but no link content has been supplied.",
+          "selector": "html > body > a",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name",
+          "message": "This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > form > input:nth-child(1)",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle1.Guideline1_3.1_3_1.F68",
+          "message": "This form field should be labelled in some way. Use the label element (either with a \"for\" attribute or wrapped around the form field), or \"title\", \"aria-label\" or \"aria-labelledby\" attributes as appropriate.",
+          "selector": "html > body > form > input:nth-child(1)",
+          "runner": "htmlcs"
+        },
+        {
+          "type": "error",
+          "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "message": "This emailinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.",
+          "selector": "html > body > form > input:nth-child(2)",
+          "runner": "htmlcs"
+        }
+      ]
+    }
+  }
+]

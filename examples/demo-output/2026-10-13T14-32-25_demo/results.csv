@@ -1,0 +1,31 @@
+Date,Label,URL,Viewport,Tool,Rule ID,Impact/Severity,Selector,Help URL
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,color-contrast,serious,p,https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,image-alt,critical,img,https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,label,critical,input[type="text"][name="email"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,label,critical,input[name="name"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,label,critical,input[type="email"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,axe-core,link-name,serious,a,https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle1.Guideline1_1.1_1_1.H37,error,html > body > img,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail,error,html > body > p,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name,error,html > body > input,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle1.Guideline1_3.1_3_1.F68,error,html > body > input,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent,error,html > body > a,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name,error,html > body > form > input:nth-child(1),
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle1.Guideline1_3.1_3_1.F68,error,html > body > form > input:nth-child(1),
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,desktop,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name,error,html > body > form > input:nth-child(2),
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,color-contrast,serious,p,https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,image-alt,critical,img,https://dequeuniversity.com/rules/axe/4.8/image-alt?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,label,critical,input[type="text"][name="email"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,label,critical,input[name="name"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,label,critical,input[type="email"],https://dequeuniversity.com/rules/axe/4.8/label?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,link-name,serious,a,https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,target-size,serious,input[name="name"],https://dequeuniversity.com/rules/axe/4.8/target-size?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,axe-core,target-size,serious,input[type="email"],https://dequeuniversity.com/rules/axe/4.8/target-size?application=axeAPI
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle1.Guideline1_1.1_1_1.H37,error,html > body > img,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail,error,html > body > p,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name,error,html > body > input,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle1.Guideline1_3.1_3_1.F68,error,html > body > input,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.A.NoContent,error,html > body > a,
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputText.Name,error,html > body > form > input:nth-child(1),
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle1.Guideline1_3.1_3_1.F68,error,html > body > form > input:nth-child(1),
+2026-10-13T14:32:27.562Z,,http://localhost:8899/test-page.html,mobile,pa11y,WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name,error,html > body > form > input:nth-child(2),

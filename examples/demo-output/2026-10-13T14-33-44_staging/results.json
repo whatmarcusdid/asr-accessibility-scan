@@ -1,0 +1,1382 @@
+[
+  {
+    "url": "https://example.com",
+    "viewport": "desktop",
+    "timestamp": "2026-10-13T14:33:44.110Z",
+    "axe": {
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+          "help": "ARIA hidden element must not be focusable or contain focusable elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "focusable-modal-open",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements while a modal is open"
+                },
+                {
+                  "id": "focusable-disabled",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                },
+                {
+                  "id": "focusable-not-tabbable",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<svg viewBox=\"0,0,20,20\" width=\"44\" height=\"44\" fill=\"currentColor\" aria-hidden=\"true\">",
+              "target": [
+                "svg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#0000ee",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 9.39,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 9.39"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2a",
+            "wcag141",
+            "TTv5",
+            "TT13.a",
+            "EN-301-549",
+            "EN-9.1.4.1"
+          ],
+          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "link-in-text-block-style",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Links can be distinguished from surrounding text by visual styling"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is not in tab order or has accessible text"
+                }
+              ],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "impact": null,
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag2aa",
+            "wcag144",
+            "EN-301-549",
+            "EN-9.1.4.4",
+            "ACT"
+          ],
+          "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "help": "Zooming and scaling must not be disabled",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/meta-viewport?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "meta-viewport",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "<meta> tag does not disable zooming on mobile devices"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+              "target": [
+                "meta[name=\"viewport\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "valid-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2aa",
+            "wcag312",
+            "TTv5",
+            "TT11.b",
+            "EN-301-549",
+            "EN-9.3.1.2",
+            "ACT"
+          ],
+          "description": "Ensures lang attributes have valid values",
+          "help": "lang attribute must have a valid value",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/valid-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ar\" dir=\"rtl\">هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.</p>",
+              "target": [
+                "p[lang=\"ar\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "impact": "serious",
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "internal-link-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No valid skip link found"
+                },
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a heading"
+                },
+                {
+                  "id": "landmark",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a landmark region"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2026-10-13T14:33:44.808Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": []
+    }
+  },
+  {
+    "url": "https://example.com",
+    "viewport": "mobile",
+    "timestamp": "2026-10-13T14:33:44.111Z",
+    "axe": {
+      "violations": [],
+      "passes": [
+        {
+          "id": "aria-hidden-body",
+          "impact": null,
+          "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden=\"true\" is not present on the document body.",
+          "help": "aria-hidden=\"true\" must not be present on the document body",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-body?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "aria-hidden-body",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "No aria-hidden attribute is present on document body"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<body>",
+              "target": [
+                "body"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aria-hidden-focus",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag412",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.4.1.2"
+          ],
+          "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
+          "help": "ARIA hidden element must not be focusable or contain focusable elements",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/aria-hidden-focus?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [
+                {
+                  "id": "focusable-modal-open",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements while a modal is open"
+                },
+                {
+                  "id": "focusable-disabled",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                },
+                {
+                  "id": "focusable-not-tabbable",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No focusable elements contained within element"
+                }
+              ],
+              "none": [],
+              "impact": null,
+              "html": "<svg viewBox=\"0,0,20,20\" width=\"44\" height=\"44\" fill=\"currentColor\" aria-hidden=\"true\">",
+              "target": [
+                "svg"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143",
+            "TTv5",
+            "TT13.c",
+            "EN-301-549",
+            "EN-9.1.4.3",
+            "ACT"
+          ],
+          "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/color-contrast?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#000000",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 21,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 21"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#666666",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 5.74,
+                    "fontSize": "10.5pt (14px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 5.74"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            },
+            {
+              "any": [
+                {
+                  "id": "color-contrast",
+                  "data": {
+                    "fgColor": "#0000ee",
+                    "bgColor": "#ffffff",
+                    "contrastRatio": 9.39,
+                    "fontSize": "12.0pt (16px)",
+                    "fontWeight": "normal",
+                    "expectedContrastRatio": "4.5:1"
+                  },
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has sufficient color contrast of 9.39"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "document-title",
+          "impact": null,
+          "tags": [
+            "cat.text-alternatives",
+            "wcag2a",
+            "wcag242",
+            "TTv5",
+            "TT12.a",
+            "EN-301-549",
+            "EN-9.2.4.2",
+            "ACT"
+          ],
+          "description": "Ensures each HTML document contains a non-empty <title> element",
+          "help": "Documents must have <title> element to aid in navigation",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/document-title?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "doc-has-title",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Document has a non-empty <title> element"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-has-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures every HTML document has a lang attribute",
+          "help": "<html> element must have a lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-has-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "The <html> element has a lang attribute"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "html-lang-valid",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2a",
+            "wcag311",
+            "TTv5",
+            "TT11.a",
+            "EN-301-549",
+            "EN-9.3.1.1",
+            "ACT"
+          ],
+          "description": "Ensures the lang attribute of the <html> element has a valid value",
+          "help": "<html> element must have a valid value for the lang attribute",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/html-lang-valid?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": null,
+          "tags": [
+            "cat.color",
+            "wcag2a",
+            "wcag141",
+            "TTv5",
+            "TT13.a",
+            "EN-301-549",
+            "EN-9.1.4.1"
+          ],
+          "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+          "help": "Links must be distinguishable without relying on color",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-in-text-block?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "link-in-text-block-style",
+                  "data": null,
+                  "relatedNodes": [
+                    {
+                      "html": "<body>",
+                      "target": [
+                        "body"
+                      ]
+                    }
+                  ],
+                  "impact": "serious",
+                  "message": "Links can be distinguished from surrounding text by visual styling"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "link-name",
+          "impact": null,
+          "tags": [
+            "cat.name-role-value",
+            "wcag2a",
+            "wcag244",
+            "wcag412",
+            "section508",
+            "section508.22.a",
+            "TTv5",
+            "TT6.a",
+            "EN-301-549",
+            "EN-9.2.4.4",
+            "EN-9.4.1.2",
+            "ACT"
+          ],
+          "description": "Ensures links have discernible text",
+          "help": "Links must have discernible text",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/link-name?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "has-visible-text",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element has text that is visible to screen readers"
+                }
+              ],
+              "all": [],
+              "none": [
+                {
+                  "id": "focusable-no-name",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Element is not in tab order or has accessible text"
+                }
+              ],
+              "impact": null,
+              "html": "<a href=\"https://iana.org/help/example-domains\">Learn more</a>",
+              "target": [
+                "a"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "meta-viewport",
+          "impact": null,
+          "tags": [
+            "cat.sensory-and-visual-cues",
+            "wcag2aa",
+            "wcag144",
+            "EN-301-549",
+            "EN-9.1.4.4",
+            "ACT"
+          ],
+          "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+          "help": "Zooming and scaling must not be disabled",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/meta-viewport?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "meta-viewport",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "critical",
+                  "message": "<meta> tag does not disable zooming on mobile devices"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": null,
+              "html": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">",
+              "target": [
+                "meta[name=\"viewport\"]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "valid-lang",
+          "impact": null,
+          "tags": [
+            "cat.language",
+            "wcag2aa",
+            "wcag312",
+            "TTv5",
+            "TT11.b",
+            "EN-301-549",
+            "EN-9.3.1.2",
+            "ACT"
+          ],
+          "description": "Ensures lang attributes have valid values",
+          "help": "lang attribute must have a valid value",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/valid-lang?application=axeAPI",
+          "nodes": [
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"en\">This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.</p>",
+              "target": [
+                "p[lang=\"en\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ar\" dir=\"rtl\">هذا النطاق مُخصص للاستخدام في أمثلة التوثيق دون الحاجة إلى إذن. هذه ليست خدمة، يُرجى تجنب الاعتماد عليها لأغراض الاختبار والمراقبة.</p>",
+              "target": [
+                "p[lang=\"ar\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"zh\">该域名仅用于文档示例，无需获得许可。这并非一项服务，请勿将其用于测试和监控目的。</p>",
+              "target": [
+                "p[lang=\"zh\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"fr\">L’usage de ce domaine est réservé à des exemples de documentation, sans autorisation préalable.  Il ne s’agit pas d’un service ; son utilisation à des fins de test ou de surveillance est à éviter.</p>",
+              "target": [
+                "p[lang=\"fr\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"ru\">Данный домен предназначен для использования в примерах документации без необходимости получения предварительного разрешения. Это не сервис; не рекомендуется его использование для тестирования и мониторинга.</p>",
+              "target": [
+                "p[lang=\"ru\"]"
+              ]
+            },
+            {
+              "any": [],
+              "all": [],
+              "none": [
+                {
+                  "id": "valid-lang",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Value of lang attribute is included in the list of valid languages"
+                }
+              ],
+              "impact": null,
+              "html": "<p lang=\"es\">Este dominio está destinado al uso en ejemplos de documentación sin necesidad de permiso. Esto no es un servicio; evitar utilizarlo para realizar pruebas o monitoreos.</p>",
+              "target": [
+                "p[lang=\"es\"]"
+              ]
+            }
+          ]
+        }
+      ],
+      "incomplete": [
+        {
+          "id": "bypass",
+          "impact": "serious",
+          "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o",
+            "TTv5",
+            "TT9.a",
+            "EN-301-549",
+            "EN-9.2.4.1"
+          ],
+          "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+          "help": "Page must have means to bypass repeated blocks",
+          "helpUrl": "https://dequeuniversity.com/rules/axe/4.8/bypass?application=axeAPI",
+          "nodes": [
+            {
+              "any": [
+                {
+                  "id": "internal-link-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "No valid skip link found"
+                },
+                {
+                  "id": "header-present",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a heading"
+                },
+                {
+                  "id": "landmark",
+                  "data": null,
+                  "relatedNodes": [],
+                  "impact": "serious",
+                  "message": "Page does not have a landmark region"
+                }
+              ],
+              "all": [],
+              "none": [],
+              "impact": "serious",
+              "html": "<html lang=\"en\">",
+              "target": [
+                "html"
+              ],
+              "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a heading\n  Page does not have a landmark region"
+            }
+          ]
+        }
+      ],
+      "timestamp": "2026-10-13T14:33:44.808Z"
+    },
+    "lighthouse": {
+      "error": "Failed to fetch browser webSocket URL from http://127.0.0.1:9222/json/version: fetch failed"
+    },
+    "pa11y": {
+      "issues": []
+    }
+  }
+]

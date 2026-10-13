@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Page with Accessibility Issues</title>
+</head>
+<body>
+  <h1>Test Page</h1>
+  
+  <!-- Missing alt text -->
+  <img src="https://via.placeholder.com/150">
+  
+  <!-- Poor color contrast -->
+  <p style="color: #ccc; background: #fff;">This text has poor contrast</p>
+  
+  <!-- Missing label -->
+  <input type="text" name="email">
+  
+  <!-- Empty link -->
+  <a href="#"></a>
+  
+  <!-- Missing document language is handled in scanner -->
+  
+  <h3>Form without labels</h3>
+  <form>
+    <input type="text" name="name">
+    <input type="email" name="email">
+    <button>Submit</button>
+  </form>
+  
+  <!-- Table without headers -->
+  <table>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+  </table>
+</body>
+</html>
